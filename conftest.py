@@ -18,7 +18,9 @@ def browser(request):
     options = Options()
     options.add_experimental_option('prefs', {'intl.accept_languages': browser_language})
     browser = webdriver.Chrome(options=options)
-    
+    link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
+    browser.get(link)
+    time.sleep(30)
     yield browser
     
     print("\nquit browser..")
