@@ -20,7 +20,7 @@ def browser(request):
     browser = webdriver.Chrome(options=options)
     link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
     browser.get(link)
-    time.sleep(30)
+    time.sleep(3)
     yield browser
     
     print("\nquit browser..")
